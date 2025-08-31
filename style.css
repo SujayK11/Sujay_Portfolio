@@ -1,0 +1,269 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Hero Section === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: #e6f0ff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.hero-text h1 span {
+  color: #1a4dab;
+}
+
+.hero-text h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #1a4dab;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0d2c6b;
+}
+
+.hero-img img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1a4dab;
+}
+
+/* === Skills Section === */
+.skills {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2em;
+  color: #1a4dab;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Accordion */
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.accordion-item {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: #f9fbff;
+}
+
+.accordion-header {
+  width: 100%;
+  background: #e6f0ff;
+  color: #1a4dab;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #d0e0ff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+}
+
+.accordion-content ul {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.accordion-content li {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* === Projects Section === */
+.projects {
+  padding: 60px 10%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #1a4dab;
+}
+
+.projects-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.project-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+  flex: 0 0 100%; /* Show one project at a time */
+  box-sizing: border-box;
+  background: #f9fbff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1a4dab;
+  font-weight: bold;
+}
+
+/* Slider Buttons */
+.prev, .next {
+  position:absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background: #4278db;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 10px;
+  z-index: 5; /* makes sure they appear above cards */
+}
+
+.prev { left: 5px; }   /* closer inside */
+.next { right: 5px; }  /* closer inside */
+
+
+/* === Education Section === */
+.education {
+  padding: 60px 10%;
+  background: #e6f0ff;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #1a4dab;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.edu-card {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+}
+
+.edu-card h3 {
+  margin-bottom: 8px;
+  color: #1a4dab;
+}
+
+/* === Contact Section === */
+.contact {
+  padding: 60px 10%;
+  background: #e6f0ff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1a4dab;
+}
+
+.contact a {
+  color: #1a4dab;
+  font-weight: 500;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a4dab;
+  color: #fff;
+  margin-top: 30px;
+}
